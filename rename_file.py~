@@ -2,15 +2,10 @@
 # Script removes prefixes from files #       
 ######################################
 import os
-import tkinter as tk
-from tkinter.filedialog import askdirectory
 
-root = tk.Tk()
-root.withdraw()
-
-path = askdirectory()
+path = "C:\Users\emmanuel.toko\Personal\Learning\DevOps\DevOps"
 new_filename= ""
-prefix = ""
+prefix = "y2mate.com - "
 
 filenames = os.listdir(path) 
 for dir,subdir,listfilename in os.walk(path):
